@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 class AppHeader extends React.Component {
   render() {
@@ -16,9 +15,9 @@ class AppHeader extends React.Component {
                   Home
                 </a>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDarkDropdownMenuLink"
                   role="button"
@@ -28,24 +27,24 @@ class AppHeader extends React.Component {
                   Movies
                 </a>
                 <ul
-                  class="dropdown-menu dropdown-menu-dark"
+                  className="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
                   <li>
-                    <a class="dropdown-item" href="/movies">
+                    <a className="dropdown-item" href="/movies">
                       Popular
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/movies/top-rated">
+                    <a className="dropdown-item" href="/movies/top-rated">
                       Top Rated
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDarkDropdownMenuLink2"
                   role="button"
@@ -55,20 +54,33 @@ class AppHeader extends React.Component {
                   TV Shows
                 </a>
                 <ul
-                  class="dropdown-menu dropdown-menu-dark"
+                  className="dropdown-menu dropdown-menu-dark"
                   aria-labelledby="navbarDarkDropdownMenuLink2"
                 >
                   <li>
-                    <a class="dropdown-item" href="/tv-shows">
+                    <a className="dropdown-item" href="/tv-shows">
                       Popular
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/tv-shows/top-rated">
+                    <a className="dropdown-item" href="/tv-shows/top-rated">
                       Top Rated
                     </a>
                   </li>
                 </ul>
+              </li>
+            </ul>
+
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link" href="/login">
+                  Login
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/join-tmdb">
+                  Join TMDB
+                </a>
               </li>
             </ul>
           </div>

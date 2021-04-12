@@ -4,6 +4,12 @@ import MoviesList from "./Components/MoviesList";
 import AppHeader from "./Components/AppHeader";
 import TVShowsList from "./Components/TvShowsList";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import AppFooter from "./Components/AppFooter";
+import About from "./Components/About";
+import ContactUs from "./Components/ContactUs";
+import Login from "./Components/Login";
+import JoinTMDB from "./Components/JoinTMDB";
 
 // / -> Home
 // /movies -> MoviesList
@@ -31,10 +37,24 @@ class App extends React.Component {
           <Route path="/tv-shows">
             <TVShowsList title="Popular TV Shows" sortBy="popularity.desc" />
           </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact-us">
+            <ContactUs />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/join-tmdb">
+            <JoinTMDB />
+          </Route>
           <Route path="/">
-            <div>Home</div>
+            <Home />
           </Route>
         </Switch>
+
+        <AppFooter />
       </BrowserRouter>
     );
   }

@@ -1,1 +1,12 @@
+.about {
+  background-color: black;
+  color: aliceblue;
+}
+.linktourl {
+  text-decoration: none;
+}
 
+.resetandcancel {
+  text-decoration: none;
+  margin-left: 10px;
+}
